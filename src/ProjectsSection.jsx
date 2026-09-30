@@ -1,4 +1,5 @@
 import ritaSkeeterImg from './assets/ritaSkeeter.png'
+import bestEverImg from './assets/bestever.png'
 
 const PROJECTS = [
   {
@@ -10,18 +11,18 @@ const PROJECTS = [
     photos: [ritaSkeeterImg],
   },
   {
+    title: 'BestEver',
+    description:
+      'A website that will finally put an end to the age-old debate of what is the best ever. A free voting platform where people can express what they believe is the best ever in a given category, with results recorded and displayed as a running universal poll for each category.',
+    link: 'https://www.bestever.live/',
+    side: 'right',
+    photos: [bestEverImg],
+  },
+  {
     title: 'PantherTech',
     comingSoon: true,
     description:
       'An upcoming project management tool built for drone companies, designed to reduce misplacement costs, increase efficiency, and boost productivity.',
-    side: 'right',
-    photos: [null],
-  },
-  {
-    title: 'BestEver',
-    comingSoon: true,
-    description:
-      'A website that will finally put an end to the age-old debate of what is the best ever. A free voting platform where people can express what they believe is the best ever in a given category, with results recorded and displayed as a running universal poll for each category.',
     side: 'left',
     photos: [null],
   },
