@@ -13,7 +13,7 @@ const PROJECTS = [
   {
     title: 'BestEver',
     description:
-      'A website that will finally put an end to the age-old debate of what is the best ever. A free voting platform where people can express what they believe is the best ever in a given category, with results recorded and displayed as a running universal poll for each category.',
+      'A website that will finally put an end to the age-old debate of what is the best ever. A free voting platform where people can express what they believe is the best ever in a given category, with results recorded and displayed as a running universal poll for each category. Built with a React frontend and a TypeScript/Express API backed by PostgreSQL and Prisma, containerized with Docker and deployed to Kubernetes, with Firebase Authentication and a production stack spanning Render, Vercel, and AWS RDS.',
     link: 'https://www.bestever.live/',
     side: 'right',
     photos: [bestEverImg],
