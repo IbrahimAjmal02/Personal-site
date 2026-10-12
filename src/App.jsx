@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import profilePicture from './assets/ProfilePicture.jpeg'
+import profilePicture from './assets/ProfessionalHeadshot.png'
 import pictureFrame from './assets/pictureFrame_2.png'
 import CandleCursor from './CandleCursor'
 import GithubContributionCalendar from './GithubContributionCalendar'
