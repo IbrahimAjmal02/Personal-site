@@ -1,7 +1,26 @@
+import fundTrackImg from './assets/FundTrack.png'
 import ritaSkeeterImg from './assets/ritaSkeeter.png'
 import bestEverImg from './assets/bestever.png'
 
 const PROJECTS = [
+  {
+    title: 'FundTrack',
+    description:
+      'A mutual fund subaccounting app: advisors place buy and sell orders during the day, operations enters each fund\'s end-of-day price, and a "Process day" run prices and settles every pending order and updates each client\'s holdings. The real problem it solves: a brokerage only holds one combined account at each fund company, so it needs its own records of how many units each client actually owns. Built with Angular and Spring Boot on PostgreSQL, with 73 automated tests (JUnit, Mockito, Testcontainers against a real database, Vitest) and deployed with Docker on Render, Vercel, and Neon. Orders are dated by the server so nobody can backdate a trade to a price that\'s already known, and all money and units use BigDecimal instead of floating point.',
+    link: 'https://fund-track-ibrahim.vercel.app/clients/4',
+    githubLink: 'https://github.com/IbrahimAjmal02/FundTrack',
+    side: 'left',
+    photos: [fundTrackImg],
+  },
+  {
+    title: 'BestEver',
+    description:
+      'A website that will finally put an end to the age-old debate of what is the best ever. A free voting platform where people can express what they believe is the best ever in a given category, with results recorded and displayed as a running universal poll for each category. Built with a React frontend and a TypeScript/Express API backed by PostgreSQL and Prisma, containerized with Docker and deployed to Kubernetes, with Firebase Authentication and a production stack spanning Render, Vercel, and AWS RDS.',
+    link: 'https://www.bestever.live/',
+    githubLink: 'https://github.com/IbrahimAjmal02/BestEver',
+    side: 'right',
+    photos: [bestEverImg],
+  },
   {
     title: 'Rita Skeeter',
     description:
@@ -11,19 +30,11 @@ const PROJECTS = [
     photos: [ritaSkeeterImg],
   },
   {
-    title: 'BestEver',
-    description:
-      'A website that will finally put an end to the age-old debate of what is the best ever. A free voting platform where people can express what they believe is the best ever in a given category, with results recorded and displayed as a running universal poll for each category. Built with a React frontend and a TypeScript/Express API backed by PostgreSQL and Prisma, containerized with Docker and deployed to Kubernetes, with Firebase Authentication and a production stack spanning Render, Vercel, and AWS RDS.',
-    link: 'https://www.bestever.live/',
-    side: 'right',
-    photos: [bestEverImg],
-  },
-  {
     title: 'PantherTech',
     comingSoon: true,
     description:
       'An upcoming project management tool built for drone companies, designed to reduce misplacement costs, increase efficiency, and boost productivity.',
-    side: 'left',
+    side: 'right',
     photos: [null],
   },
 ]
@@ -65,6 +76,11 @@ function ProjectsSection() {
               {project.link && (
                 <a className="project-link" href={project.link} target="_blank" rel="noreferrer">
                   View Project
+                </a>
+              )}
+              {project.githubLink && (
+                <a className="project-link" href={project.githubLink} target="_blank" rel="noreferrer">
+                  View GitHub Repo
                 </a>
               )}
             </div>

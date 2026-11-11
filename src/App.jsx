@@ -103,7 +103,7 @@ function App() {
       <section className="hero-frame">
         <div className="hero-body">
           <div className="hero-photo-frame">
-            <img src={profilePicture} alt="Portrait of [your name]" className="hero-photo" />
+            <img src={profilePicture} alt="Portrait of Muhammad Ibrahim Ajmal" className="hero-photo" />
             <img src={pictureFrame} alt="" className="hero-photo-border" />
 
             {!isUnlocked && !showPrompt && (
